@@ -23,3 +23,22 @@ elif(number >= 40):
     print("E")
 else:
     print("F")
+
+
+    #even or odd    
+
+num = number % 2
+if (num == 0):
+    print("Even")
+else:
+    print("Odd")
+
+a= 5
+b= 7
+c= 3
+if(a > b and a > c):
+    print("a is greater")
+elif(b > a and b > c):
+    print("b is greater")
+else:
+    print("c is greater")
