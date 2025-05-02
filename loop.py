@@ -5,6 +5,14 @@ for i in range(len(country)):
     print(country[i])
 
 
+n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+totla = 0
+i = 0
+while i < len(n):
+    totla += n[i]
+    i += 1
+print("Total is", totla)
+
 
 
 
