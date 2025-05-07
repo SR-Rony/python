@@ -1,4 +1,15 @@
-string = "Hello world"
+string = "Hello World, In Bangladesh"
+
+
+# rcapi = string.capitalize()
+
+
+# print(string.casefold())
+print(string.center())
+
+
+
+
 
 # string slice
 slice = string[0:3]
@@ -13,10 +24,10 @@ character = string[2]
 #     # print(x)
 
 splite = string.split(" ")
-print(splite)
+# print(splite)
 # replace = string.replace("Hello","Welcome")
 # print(replace)
-print(string)
+# print(string)
 
 # print(string.strip())
 # print(string.upper())

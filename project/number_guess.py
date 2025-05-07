@@ -8,18 +8,19 @@ guessName = random.choice(nameList)
 print(guessName)
 
 count = 0
-life = 3
+life = 5
 
 while life > count:
     myName = input("inter your name : ")
 
     if myName == guessName :
-        print(f"you wine live chang {count} result name is {myName}")
+
+        print(f"you wine live chang {life} result name is {myName}")
         break
 
     elif myName != guessName:
         count +=1
-        print(f"you loss please try again your change : {count}")
+        print(f"you loss please try again your change : {life} ")
 
 
 # print("Welcome to the Number Guessing Game!")

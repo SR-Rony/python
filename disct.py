@@ -6,13 +6,17 @@ student ={
         "state" : "Delhi",
         "country" : "India"
     },
-    "hobbies" : ["reading", "writing", "coding"],
-    "marks" : {
-        "maths" : 90,
-        "english" : 85,
-        "science" : 95
-    },
-    "is_student" : True,
+    "country":"bengladesh"
 }
 
-print(student.keys())
+# newStud = student.pop("age")
+# newStud = student.items()
+# newStud = student.popitem()
+newStud = student.setdefault("name")
+newStud = student.update("name")
+
+print(newStud)
+
+print("====================")  
+
+print(student)
