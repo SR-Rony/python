@@ -5,7 +5,18 @@ string = "Hello World, In Bangladesh"
 
 
 # print(string.casefold())
-print(string.center())
+# print(string.center())
+
+welcome1 = "**********************"
+welcome2 = "**                  **"
+welcome3 = "**      WELCOME     **"
+
+
+print(welcome1)
+print(welcome2)
+print(welcome3)
+print(welcome2)
+print(welcome1)
 
 
 
