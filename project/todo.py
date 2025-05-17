@@ -50,4 +50,30 @@ def todo ():
         else :
             print("Invalid number")
 
-todo()
+# todo()
+
+# name list 
+
+def todoName () :
+    print("Welcome to name list")
+
+    nameList = []
+
+    countList = int(input("how many name list : "))
+
+    for i in range(1,countList+1) :
+
+        name = input("Enter your name : ")
+
+        nameList.append(name)
+
+    print(f"your name list\n {nameList}")
+
+    #  while True :
+    #     option = input("1-Add\n2-Update\n3-Delete\n4-Vew\n5-Exit")
+        
+    #     if option == 1
+
+
+
+todoName()
