@@ -63,17 +63,53 @@ def todoName () :
 
     for i in range(1,countList+1) :
 
-        name = input("Enter your name : ")
+        name = input(f"Enter your name : ")
 
         nameList.append(name)
 
     print(f"your name list\n {nameList}")
 
-    #  while True :
-    #     option = input("1-Add\n2-Update\n3-Delete\n4-Vew\n5-Exit")
-        
-    #     if option == 1
+    while True :
 
+        option = int(input("1-Add\n2-Update\n3-Delete\n4-Vew\n5-Exit\n"))
+        
+        if option == 1 :
+            addName = input("your name add :")
+            nameList.append(addName)
+            print("Name is added :", addName)
+
+        elif option == 2 :
+            updateName = input("your update name :")
+
+            if updateName in nameList :
+
+                newName = input("your new name : ")
+                nameIndex = nameList.index(updateName)
+                nameList[nameIndex] = newName
+             
+                print("name update successfull :",newName)
+            else:
+                print("Invalid name")
+
+        elif option == 3 :
+            delName = input("Inter your delete name : ")
+            
+            if delName in nameList :
+                delIndex = nameList.index(delName)
+                del nameList[delIndex]
+                print("delete successfull", delName)
+
+            else:
+                print("Invalid name")
+
+        elif option == 4 :
+            print("all name list :",nameList)
+        
+        elif option == 5:
+            print("list end")
+            break
+        else:
+            print("Invalid opthon")
 
 
 todoName()
