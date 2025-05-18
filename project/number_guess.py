@@ -1,26 +1,62 @@
 import random
 
+def guess_number() :
 
-nameList = ["rony","sabina","sagor","sabron","love"]
+    print('welcome to number guess number')
 
-guessName = random.choice(nameList)
+    low_number= int(input("Enter the low number :"))
+    high_number = int(input("Enter the hight number :"))
 
-print(guessName)
+    print(f"You have 7 change to guess tha number between {low_number} and {high_number} let,s start !")
 
-count = 0
-life = 5
+    num = random.randint(low_number,high_number)
+    chang = 7
+    guess = 0
 
-while life > count:
-    myName = input("inter your name : ")
+    while guess < chang :
 
-    if myName == guessName :
+        guess += 1
+        guessNum = int(input('Enter you guess number : '))
 
-        print(f"you wine live chang {life} result name is {myName}")
-        break
+        if num == guessNum :
+            print(f"Currect the number is {num} you guess it in {guess} attempts.")
+            break
 
-    elif myName != guessName:
-        count +=1
-        print(f"you loss please try again your change : {life} ")
+        elif num != guessNum and guess >=chang :
+            print(f"The number was {num} your batter luck next time")
+
+        elif guessNum > num :
+            print("Too high try a low number")
+
+        elif guessNum < num :
+            print("Too low try a high number")
+        
+        else :
+            print("Invelid number")
+
+guess_number()
+
+
+# nameList = ["rony","sabina","sagor","sabron","love"]
+
+# guessName = random.choice(nameList)
+
+# print(guessName)
+
+# count = 0
+# life = 5
+
+# while life > count:
+#     myName = input("inter your name : ")
+
+#     if myName == guessName :
+
+#         print(f"you wine live chang {life} result name is {myName}")
+#         break
+
+#     elif myName != guessName:
+#         count +=1
+#         print(f"you loss please try again your change : {life} ")
 
 
 # print("Welcome to the Number Guessing Game!")
