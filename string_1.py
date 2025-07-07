@@ -1,4 +1,17 @@
-string = "Hello World, In Bangladesh"
+string = "Wlcome to Python Programming"
+
+print(string.find("Python"))
+
+
+
+# user = input("Enter your name : ")
+
+# print(f"Hello {user}, {string}")
+
+# for x in string:
+#     print(x)
+
+# print(string[5:])
 
 
 # rcapi = string.capitalize()
@@ -12,11 +25,11 @@ welcome2 = "**                  **"
 welcome3 = "**      WELCOME     **"
 
 
-print(welcome1)
-print(welcome2)
-print(welcome3)
-print(welcome2)
-print(welcome1)
+# print(welcome1)
+# print(welcome2)
+# print(welcome3)
+# print(welcome2)
+# print(welcome1)
 
 
 
